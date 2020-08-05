@@ -1,25 +1,18 @@
-package com.chefg.sboot.pojo;
+package com.chefg.sbot.pojo;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
-/*
 
 @Entity
 @Table(name = "user")
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
+public class User {
 
-*/
-
-
-public class user {
-    /*@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")*/
+    @Column(name = "id")
     int id;
     String username;
     String password;
